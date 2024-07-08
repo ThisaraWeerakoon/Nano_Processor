@@ -66,7 +66,7 @@ This lab involves designing and developing a 4-bit processor capable of executin
 The following table contains the list of functions the shell should support
 alongside with a brief description of what they are supposed to do.
 
-<img src="assets/Screenshot 2024-07-06 at 17.27.42.png" alt="Awesome README Templates" />
+<img src="assets/Screenshot 2024-07-08 at 20.49.21.png" alt="Awesome README Templates" />
 
 You can see in the following screenshots how my developed operating system works for those commands giving the system information of the machine. If you are also supposed to use this project, make sure to change the name in the **'init.c'** file.
 
