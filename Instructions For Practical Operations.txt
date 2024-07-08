@@ -1,0 +1,91 @@
+﻿Components of the design:-
+
+
+a) The topmost design source file is System. (System.vhd)
+b) Main 3 components of System:
+1. Slow Clock (Slow_Clk.vhd) :- count is set to 3000000 to slow down 
+2. Nano processor (nano_processor.vhd) :- contains all components in processor
+3. ROM for 7 segment (LUT_16_7.vhd) :- Store 7 segment display outputs for each digit. 
+
+
+Inputs to system :- Clk (for board clock)
+                               Res ( reset button)
+
+
+Outputs from system:- Zero (to represent all output 4 bits are zero)
+                                    Overflow (indicate whether there is a overflow)
+                         S_7Seg (Outputs for seven segment display)
+                                    S_out (value of Register 7)
+                                Anode ( Anode configuration - power only LSB in 7 seg display)
+
+
+Test on Basys3 board
+
+
+Mapping of pins/buttons of board
+
+
+1. Reset button (Res) :- U18 
+2. Clock (Clk) :- W5
+
+
+Clock signal associates with W5 Pin. I/0 standard for the clock signal is LVCMOS33 with a period of 10 ns and 5 ns high and 5 ns low.
+
+
+3. LEDs for 4 bits for R7 out (S_out) :- 
+
+
+S_out(3) → V19     (MSB)
+S_out(2) → U19
+S_out(1) → E19
+S_out(0) → U16     (LSB)
+
+
+4. 7 segment display (S_7Seg) :- 
+
+
+S_7Seg[0] → W7
+S_7Seg[1] → W6
+S_7Seg[2] → U8
+S_7Seg[3] → V8
+S_7Seg[4] → U5
+S_7Seg[5] → V5
+S_7Seg[6] → U7
+
+
+5. Zero flag (Zero) :- P1
+6. Overflow flag (Overflow) :- L1
+
+
+7. Anode 
+
+
+Anode[0] → U2
+Anode[1] → U4
+Anode[2] → V4
+Anode[3] → W4 
+
+
+7 Seg Display is in Common anode configuration. Make the anode High(1) for first 3 displays and keep Low(0) only the last 7 segment display which for Least Significant Bit
+
+
+Functionality of Program :- 
+
+
+Binary hard coded assembly program for finding sum of numbers from 1 to 3. 8  instructions.
+
+
+Observation of Basys3 testing :- 
+
+
+When bitstream is loaded to board :- 
+
+
+
+
+Display 1 in seven seg. And output LEDs. (1)
+Then Display 3 in seven seg Display and output LEDs (1+2=3)
+Finally display 6 in seven seg. Display and output LEDs. (3+3=6)
+
+
+When we press the reset button U 18 above, the process repeats.
