@@ -71,6 +71,19 @@ Block diagram of the nanoprocessor is given below
 
 <img src="assets/Screenshot 2024-07-08 at 21.44.40.png" alt="Awesome README Templates" />
 
+## Practical Operation
+
+See `Instructions For Practical Operations.txt` for ways to get started.
+
+## Report and Documentation
+
+See 'Project Report.pdf' 
+
+## Demo 
+
+
+
+
 
 ## Contributing
 
