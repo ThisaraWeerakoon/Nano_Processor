@@ -68,6 +68,10 @@ alongside with a brief description of what they are supposed to do.
 
 <img src="assets/Screenshot 2024-07-08 at 20.49.21.png" alt="Awesome README Templates" />
 
+Block diagram of the nanoprocessor is given below
+
+<img src="assets/Screenshot 2024-07-08 at 21.44.40.png" alt="Awesome README Templates" />
+
 You can see in the following screenshots how my developed operating system works for those commands giving the system information of the machine. If you are also supposed to use this project, make sure to change the name in the **'init.c'** file.
 
 <img src="assets/screenshot1 (1).jpeg" alt="Awesome README Templates" />
