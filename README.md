@@ -5,7 +5,7 @@
 ## Overview
 
 As part of the <b>CS1050 - Computer Organization and Digital Design</b> module,
-This lab involves designing and developing a 4-bit processor capable of executing four specific instructions. By completing this lab, you will achieve the following objectives:
+This project involves designing and developing a 4-bit processor capable of executing four specific instructions. By completing this project, able to implement:
 
 <ul>
     <li>Design and develop a 4-bit arithmetic unit that can add and subtract signed integers.</li>
