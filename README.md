@@ -80,9 +80,7 @@ See `Instructions For Practical Operations.txt` for ways to get started.
 See 'Project Report.pdf' 
 
 ## Demo 
-
-
-
+https://github.com/ThisaraWeerakoon/Nano_Processor/assets/83450623/20d34ea7-4976-4179-bd00-1663a7685924
 
 
 ## Contributing
